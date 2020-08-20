@@ -6,12 +6,11 @@ const minutesToWait = 20;
 const waitInSeconds = 60 * minutesToWait;
 const endTime = moment().add(minutesToWait, 'minute');
 
-const attempt = new Attempt(recordFilePath);
-
-
 // TODO: Load these from a config file
 const WEBSITE = "https://www.google.com/";
 const recordFilePath = "./data/focusAttempts.json";
+
+const attempt = new Attempt(recordFilePath);
 
 
 (async ()=> {    
